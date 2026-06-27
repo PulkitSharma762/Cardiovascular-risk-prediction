@@ -1,16 +1,182 @@
-# React + Vite
+❤️ Cardiovascular Risk Prediction
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack Deep Learning web application that predicts the risk of cardiovascular disease based on a patient's health information. The application provides an intuitive user interface for entering patient details and displays the predicted cardiovascular risk percentage along with the corresponding risk level.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+📌 Project Overview
 
-## React Compiler
+Cardiovascular diseases are among the leading causes of death worldwide. Early prediction can help patients seek timely medical attention and adopt healthier lifestyles.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project uses a Deep Learning model trained on cardiovascular health data to estimate the probability of heart disease. The trained model is deployed using FastAPI, while the frontend is developed with React and Tailwind CSS to provide a modern and responsive user experience.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✨ Features
+
+- Predicts cardiovascular disease risk
+- Calculates and displays risk percentage
+- Displays Low, Medium, or High risk level
+- Calculates Body Mass Index (BMI)
+- Provides basic health recommendations
+- Responsive and modern user interface
+- REST API powered by FastAPI
+- Deep Learning model integration
+
+---
+
+🛠️ Tech Stack
+
+Frontend
+
+- React.js
+- Vite
+- Tailwind CSS
+- Axios
+
+Backend
+
+- FastAPI
+- TensorFlow / Keras
+- Scikit-learn
+- NumPy
+- Joblib
+
+Machine Learning
+
+- Deep Neural Network (TensorFlow/Keras)
+- StandardScaler
+- Google Colab (Model Training)
+
+---
+
+📂 Project Structure
+
+Cardiovascular-risk-prediction/
+
+├── backend/
+│   ├── cardiovascular_model.h5
+│   ├── scaler.pkl
+│   ├── main.py
+│   └── requirements.txt
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── services/
+│   │   ├── assets/
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   ├── package.json
+│   └── vite.config.js
+│
+├── README.md
+└── .gitignore
+
+---
+
+⚙️ Installation
+
+Clone the repository
+
+git clone https://github.com/PulkitSharma762/Cardiovascular-risk-prediction.git
+
+cd Cardiovascular-risk-prediction
+
+---
+
+▶️ Run Backend
+
+cd backend
+
+python -m venv venv
+
+venv\Scripts\activate
+
+pip install -r requirements.txt
+
+uvicorn main:app --reload
+
+Backend runs at:
+
+http://127.0.0.1:8000
+
+---
+
+▶️ Run Frontend
+
+Open another terminal.
+
+cd frontend
+
+npm install
+
+npm run dev
+
+Frontend runs at:
+
+http://localhost:5173
+
+---
+
+🧠 Machine Learning Model
+
+- Model Type: Deep Neural Network
+- Framework: TensorFlow / Keras
+- Model File: "cardiovascular_model.h5"
+- Feature Scaling: StandardScaler ("scaler.pkl")
+- Training Platform: Google Colab
+
+---
+
+📊 Input Features
+
+- Age
+- Gender
+- Height
+- Weight
+- Systolic Blood Pressure
+- Diastolic Blood Pressure
+- Cholesterol Level
+- Glucose Level
+- Smoking Status
+- Alcohol Consumption
+- Physical Activity
+
+---
+
+📤 Output
+
+The application predicts:
+
+- Cardiovascular Risk Percentage
+- Risk Level (Low / Medium / High)
+- Body Mass Index (BMI)
+- Health Recommendations
+
+---
+
+🚀 Future Improvements
+
+- User authentication
+- Patient history management
+- Prediction reports (PDF)
+- Interactive data visualizations
+- Cloud deployment
+- Explainable AI (XAI)
+
+---
+
+👨‍💻 Author
+
+Pulkit Sharma
+
+GitHub: https://github.com/PulkitSharma762
+
+---
+
+📄 License
+
+This project is developed for educational and learning purposes.
