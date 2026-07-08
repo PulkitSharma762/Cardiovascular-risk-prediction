@@ -51,7 +51,7 @@ Machine Learning
 ---
 
 📂 Project Structure
-
+```text
 Cardiovascular-risk-prediction/
 
 ├── backend/
@@ -74,7 +74,7 @@ Cardiovascular-risk-prediction/
 │
 ├── README.md
 └── .gitignore
-
+```
 ---
 
 ⚙️ Installation
