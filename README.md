@@ -1,4 +1,4 @@
-❤️ Cardiovascular Risk Prediction
+# ❤️ Cardiovascular Risk Prediction
 
 A full-stack Deep Learning web application that predicts the risk of cardiovascular disease based on a patient's health information. The application provides an intuitive user interface for entering patient details and displays the predicted cardiovascular risk percentage along with the corresponding risk level.
 
