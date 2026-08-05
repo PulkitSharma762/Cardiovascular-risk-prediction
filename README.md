@@ -169,14 +169,6 @@ The application predicts:
 
 ---
 
-👨‍💻 Author
-
-Pulkit Sharma
-
-GitHub: https://github.com/PulkitSharma762
-
----
-
 📄 License
 
 This project is developed for educational and learning purposes.
