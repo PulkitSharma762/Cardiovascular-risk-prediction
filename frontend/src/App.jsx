@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { FiActivity, FiZap, FiShield, FiCpu } from "react-icons/fi";
+import {FiActivity, FiZap, FiShield, FiCpu } from "react-icons/fi";
+import { FaHeart } from "react-icons/fa";
 import Navbar from "./components/Navbar";
 import PatientForm from "./components/PatientForm";
 import RiskCard from "./components/RiskCard";
@@ -29,11 +30,9 @@ function App() {
         <div className="text-center mb-10 sm:mb-14 animate-fade-in">
 
           {/* Icon */}
-          <div className="flex justify-center mb-5">
-            <div className="w-16 h-16 rounded-2xl bg-linear-to-br from-sky-500 to-violet-600 flex items-center justify-center shadow-xl shadow-sky-500/20 animate-heartbeat">
-              <FiActivity className="text-white" size={28} />
-            </div>
-          </div>
+          <div className="flex items-center justify-center animate-heartbeat">
+    <FaHeart className="text-red-500 drop-shadow-[0_0_15px_rgba(239,68,68,0.8)]" size={70} />
+</div>
 
           {/* Title */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 tracking-tight leading-tight">

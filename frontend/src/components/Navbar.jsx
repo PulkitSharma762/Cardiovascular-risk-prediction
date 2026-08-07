@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { FiActivity, FiMenu, FiX } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
+import { FaHeart } from "react-icons/fa";
 
 /**
  * Navbar — Professional healthcare app header with brand identity.
@@ -18,9 +19,9 @@ function Navbar() {
 
           {/* Brand */}
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-linear-to-br from-sky-500 to-violet-600 flex items-center justify-center shadow-lg shadow-sky-500/20">
-              <FiActivity className="text-white" size={18} />
-            </div>
+            
+              <FaHeart className="text-red-500" size={18} />
+            
             <div>
               <span className="text-lg font-bold tracking-tight text-white">
                 Cardio<span className="text-sky-400">Guard</span>

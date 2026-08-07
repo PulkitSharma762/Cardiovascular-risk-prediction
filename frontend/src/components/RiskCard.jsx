@@ -154,7 +154,7 @@ function RiskCard({ result }) {
           styles={buildStyles({
             pathColor: config.color,
             textColor: "#ffffff",
-            textSize: "22px",
+            textSize: "19px",
             trailColor: "rgba(51, 65, 85, 0.5)",
             pathTransitionDuration: 1.2,
           })}
