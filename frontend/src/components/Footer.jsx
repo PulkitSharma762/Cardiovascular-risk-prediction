@@ -5,11 +5,11 @@ import { FiActivity, FiShield, FiHeart } from "react-icons/fi";
  */
 function Footer() {
   return (
-    <footer className="mt-20 border-t border-white/[0.06]">
+    <footer className="mt-20 border-t border-white/6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
         {/* Disclaimer */}
-        <div className="glass-card p-5 mb-8 !rounded-xl">
+        <div className="glass-card p-5 mb-8 rounded-xl!">
           <div className="flex items-start gap-3">
             <FiShield className="text-amber-400 shrink-0 mt-0.5" size={18} />
             <div>

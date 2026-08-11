@@ -42,10 +42,12 @@ function PatientForm({ setResult }) {
   const [statusMessage, setStatusMessage] = useState(null);
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: Number(e.target.value),
-    });
+   const {name, value, type}= e.target;
+   setFormData((prev) => ({
+    ...prev,
+    [name]: type === "number" ?
+    value : Number(value),
+   }));
   };
 
   const handleSubmit = async (e) => {
